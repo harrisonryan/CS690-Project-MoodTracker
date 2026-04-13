@@ -1,7 +1,7 @@
-CS690-Project-MoodTracker
-Harrison Ryan
+# CS690-Project-MoodTracker
+Author: Harrison Ryan
 
-Project Overview
+## Project Overview
 
 This Mood Tracker application is a console-based .NET program that allows users to record and monitor their daily mood and related wellness factors such as sleep, activities, and an available option to add related notes in each particular entry. The purpose of this application is to help users reflect on their daily habits and emotional patterns over time.
 
@@ -9,7 +9,7 @@ This project represents Version 1.0.0 (Iteration 1), focusing on required (core)
 
 ⸻
 
-Features (Iteration 1)
+## Features (Iteration 1)
 
 The application currently supports the following functionality:
 	•	Add a new daily mood entry
@@ -20,7 +20,7 @@ The application currently supports the following functionality:
 	•	View all saved mood entries
 	•	View detailed information for a selected entry
 
-Functional Requirements Implemented
+## Functional Requirements Implemented
 
 The following high-priority functional requirements are implemented:
 	•	FR-1: Allow users to create a new daily mood entry
@@ -29,7 +29,8 @@ The following high-priority functional requirements are implemented:
 	•	FR-4: Allow users to view a list of saved mood entries
 	•	FR-5: Allow users to view details of a selected mood entry
 
-Technology Stack
+## Technology Stack
+
 	•	Language: C#
 	•	Framework: .NET 10
 	•	Application Type: Console/CLI Application
@@ -37,6 +38,8 @@ Technology Stack
  	•	Local IDE (VSCode/VS Studio, etc.) & GitHub Codespaces
 
 ⸻
+
+## Program File Structure
 
 Project Structure
 	•	Program.cs
@@ -50,7 +53,7 @@ Stores user data persistently in JSON format (generated when entry saved)
 
 ⸻
 
-Data Storage Approach
+## Data Storage Approach
 
 All user entries are stored in a local JSON file (mood_entries.json). JSON was selected because it provides a structured and scalable format for storing multiple entries while allowing easy serialization and deserialization within C#, as I had intentions to embed an OpenAI ML API to sythesize data for analytical purposes for end user data digestion.
 
@@ -58,19 +61,20 @@ This approach avoids the need for a database while still maintaining persistent 
 
 ⸻
 
-How to Run the Application
+## How to Run the Application
 
-Prerequisites
+### Prerequisites
 	•	.NET 10 SDK installed in relevant IDE
     •	Basic CLI Familiarity & Knowledge
 
-Steps
+### Steps
 
 Open a terminal in the project directory and run:
 
-dotnet restore (at first launch)
-dotnet build (at first launch)
-dotnet run (everytime)
+```bash
+dotnet restore
+dotnet build
+dotnet run
 
 How the Application is Useful (Iteration 1 Justification)
 
