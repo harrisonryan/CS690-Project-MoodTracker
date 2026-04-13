@@ -75,6 +75,7 @@ Open a terminal in the project directory and run:
 dotnet restore
 dotnet build
 dotnet run
+```
 
 How the Application is Useful (Iteration 1 Justification)
 
