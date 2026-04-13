@@ -1,0 +1,10 @@
+[
+  {
+    "Id": 1,
+    "EntryDate": "2026-04-06T00:00:00+00:00",
+    "MoodRating": 10,
+    "SleepHours": 8,
+    "Activities": "5",
+    "Notes": "Feeling great overall"
+  }
+]

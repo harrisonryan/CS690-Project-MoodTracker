@@ -1,0 +1,15 @@
+/workspaces/CS690-Project-MoodTracker/bin/Debug/net10.0/CS690-Project-MoodTracker
+/workspaces/CS690-Project-MoodTracker/bin/Debug/net10.0/CS690-Project-MoodTracker.deps.json
+/workspaces/CS690-Project-MoodTracker/bin/Debug/net10.0/CS690-Project-MoodTracker.runtimeconfig.json
+/workspaces/CS690-Project-MoodTracker/bin/Debug/net10.0/CS690-Project-MoodTracker.dll
+/workspaces/CS690-Project-MoodTracker/bin/Debug/net10.0/CS690-Project-MoodTracker.pdb
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/CS690-Project-MoodTracker.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/CS690-Project-MoodTracker.AssemblyInfoInputs.cache
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/CS690-Project-MoodTracker.AssemblyInfo.cs
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/CS690-Project-MoodTracker.csproj.CoreCompileInputs.cache
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/CS690-Project-MoodTracker.sourcelink.json
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/CS690-Project-MoodTracker.dll
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/refint/CS690-Project-MoodTracker.dll
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/CS690-Project-MoodTracker.pdb
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/CS690-Project-MoodTracker.genruntimeconfig.cache
+/workspaces/CS690-Project-MoodTracker/obj/Debug/net10.0/ref/CS690-Project-MoodTracker.dll
