@@ -1,28 +1,29 @@
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text.Json;
 
 public class MoodTracker
 {
-    private const string FilePath = "mood_entries.json";
-    private List<MoodEntry> _entries = new();
+    private readonly MoodStorage _storage;
+    private List<MoodEntry> _entries;
 
-    public MoodTracker()
+    public MoodTracker(MoodStorage storage)
     {
-        LoadEntries();
+        _storage = storage;
+        _entries = _storage.LoadEntries();
     }
 
     public void AddEntry(MoodEntry entry)
     {
         entry.Id = _entries.Count == 0 ? 1 : _entries.Max(e => e.Id) + 1;
         _entries.Add(entry);
-        SaveEntries();
+        Save();
     }
 
     public List<MoodEntry> GetAllEntries()
     {
-        return _entries.OrderBy(e => e.EntryDate).ToList();
+        return _entries
+            .OrderBy(e => e.EntryDate)
+            .ToList();
     }
 
     public MoodEntry? GetEntryById(int id)
@@ -30,40 +31,41 @@ public class MoodTracker
         return _entries.FirstOrDefault(e => e.Id == id);
     }
 
-    private void LoadEntries()
+    public bool UpdateEntry(MoodEntry updatedEntry)
     {
-        try
+        MoodEntry? existingEntry = GetEntryById(updatedEntry.Id);
+
+        if (existingEntry is null)
         {
-            if (!File.Exists(FilePath))
-            {
-                _entries = new List<MoodEntry>();
-                return;
-            }
-
-            string json = File.ReadAllText(FilePath);
-
-            if (string.IsNullOrWhiteSpace(json))
-            {
-                _entries = new List<MoodEntry>();
-                return;
-            }
-
-            _entries = JsonSerializer.Deserialize<List<MoodEntry>>(json) ?? new List<MoodEntry>();
+            return false;
         }
-        catch
-        {
-            _entries = new List<MoodEntry>();
-        }
+
+        existingEntry.EntryDate = updatedEntry.EntryDate;
+        existingEntry.MoodRating = updatedEntry.MoodRating;
+        existingEntry.SleepHours = updatedEntry.SleepHours;
+        existingEntry.Activities = updatedEntry.Activities;
+        existingEntry.Notes = updatedEntry.Notes;
+
+        Save();
+        return true;
     }
 
-    private void SaveEntries()
+    public bool DeleteEntry(int id)
     {
-        var options = new JsonSerializerOptions
-        {
-            WriteIndented = true
-        };
+        MoodEntry? entry = GetEntryById(id);
 
-        string json = JsonSerializer.Serialize(_entries, options);
-        File.WriteAllText(FilePath, json);
+        if (entry is null)
+        {
+            return false;
+        }
+
+        _entries.Remove(entry);
+        Save();
+        return true;
+    }
+
+    private void Save()
+    {
+        _storage.SaveEntries(_entries);
     }
 }

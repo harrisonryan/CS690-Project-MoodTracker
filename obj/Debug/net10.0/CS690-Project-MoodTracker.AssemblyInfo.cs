@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CS690-Project-MoodTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff8add51c7d0332c090a9fa0b7c12d6dc9667bb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2892d20c341a772fbcb6cb8230774ce1264ceb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("CS690-Project-MoodTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CS690-Project-MoodTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
