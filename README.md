@@ -9,6 +9,70 @@ This project represents Version 1.0.0 (Iteration 1), focusing on required (core)
 
 ⸻
 
+## NEW Iteration 2 Updates (Version 2.0.0)
+
+Version 2.0.0 improves the application by adding modular & cohesive code structure, automated testing, and additional functional requirements.
+
+## NEW Features Added
+
+The following new functionality was added in Iteration 2:
+
+- Edit an existing mood entry
+- Delete an existing mood entry
+- View a brief mood summary report
+- View sleep and mood insight comparison
+
+## Additional Functional Requirements Implemented
+
+The following functional requirements were added:
+
+- FR-7: View mood summary report
+- FR-8: View sleep and mood insight comparison
+- FR-9: Edit an existing mood entry
+- FR-10: Delete an existing mood entry
+
+## Improved Program Structure
+
+The project was redesigned into separate modules for readability, maintenance, and testing.
+
+### Modules Included:
+
+### Program.cs
+Handles menu navigation and user interaction
+
+### MoodTracker.cs
+Handles core logic such as adding, viewing, editing, and deleting entries
+
+### MoodStorage.cs
+Handles saving and loading entries using JSON file storage
+
+### MoodAnalysisService.cs
+Handles mood summaries, reports, and sleep/mood insight calculations
+
+### MoodEntry.cs
+Defines the structure of each mood entry object
+
+## Automated Testing
+
+Automated tests were added using xUnit for major modules.
+
+### Test Files
+
+- MoodTrackerTests.cs
+- MoodStorageTests.cs
+- MoodAnalysisServiceTests.cs
+
+## Running Tests
+
+Run tests from the project root using:
+
+```bash
+dotnet test CS690-Project-MoodTracker.slnx
+
+⸻
+
+### Iteration 1 Log:
+
 ## Features (Iteration 1)
 
 The application currently supports the following functionality:
@@ -91,13 +155,11 @@ This enables basic self-awareness and pattern recognition, making the applicatio
 Limitations (Future Improvements)
 
 The current version does not yet support:
-	•	Editing or deleting entries
-	•	Data visualization or trend analysis
-	•	User authentication or multi-user support
-	•	Automated testing
+	•	User authentication
+	•	Muti-User Support
 
 These features are planned for future iterations.
 
 ⸻
 
-Version 1.0.0 (at editing of this README)
+Version 2.0.0 (at editing of this README)
