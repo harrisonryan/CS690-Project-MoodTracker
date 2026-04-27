@@ -1,0 +1,6 @@
+bin/
+obj/
+mood_entries.json
+.vs/
+*.user
+*.suo
