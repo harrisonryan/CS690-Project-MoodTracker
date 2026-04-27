@@ -9,6 +9,64 @@ This project represents Version 1.0.0 (Iteration 1), focusing on required (core)
 
 ⸻
 
+## FINAL Iteration 3 Updates (Version 3.0.0)
+
+Version 3.0.0 represents the final release of the Mood Tracker application. This version completes all functional requirements originally defined during the requirements phase and finalizes the project for submission.
+
+## Final Functional Requirements Completed
+
+All 10 functional requirements are fully implemented:
+
+- FR-1: Create new daily mood entry
+- FR-2: Record mood rating
+- FR-3: Record sleep hours
+- FR-4: Record daily activities
+- FR-5: View list of saved entries
+- FR-6: View entry details
+- FR-7: View mood summary report
+- FR-8: View sleep and mood insight comparison
+- FR-9: Edit an existing mood entry
+- FR-10: Delete an existing mood entry
+
+## Final Application Features
+
+The final version allows users to:
+
+- Add and save daily mood entries
+- Record sleep, mood, activities, and optional notes
+- View all saved entries
+- View detailed entry information
+- Edit existing entries
+- Delete entries
+- View overall mood summary reports
+- Compare mood trends based on sleep patterns
+
+This makes the application fully functional, useful, and complete for end users.
+
+## Final Documentation Updates
+
+All project documentation has been fully updated for the final release:
+
+### User Documentation
+
+Includes step-by-step instructions for all 10 functional requirements so users can successfully use every feature of the application.
+
+### Development Documentation
+
+Includes modular code structure, testing information, and project design updates for maintainability and future improvements.
+
+### Deployment Documentation
+
+Includes instructions for downloading, building, running, and testing the application using:
+
+```bash
+dotnet restore
+dotnet build
+dotnet run
+dotnet test CS690-Project-MoodTracker.slnx
+
+⸻
+
 ## NEW Iteration 2 Updates (Version 2.0.0)
 
 Version 2.0.0 improves the application by adding modular & cohesive code structure, automated testing, and additional functional requirements.
@@ -162,4 +220,4 @@ These features are planned for future iterations.
 
 ⸻
 
-Version 2.0.0 (at editing of this README)
+Version 3.0.0 (at editing of this README)
