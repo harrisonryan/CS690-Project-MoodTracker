@@ -1,2 +1,4 @@
 <Solution>
+  <Project Path="CS690-Project-MoodTracker.csproj" />
+  <Project Path="MoodTracker.Tests/MoodTracker.Tests.csproj" />
 </Solution>
